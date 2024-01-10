@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="column">
+    <h3>Default component</h3>
+    <app-onpush-list
+      [dataSource]="dataSource"
+      [displayedColumns]="displayedColumns"
+    ></app-onpush-list>
+  </div>
+  <div class="column">
+    <h3>OnPush component</h3>
+    <app-default-list
+      [dataSource]="dataSource"
+      [displayedColumns]="displayedColumns"
+    ></app-default-list>
+  </div>
+</div>
+<div class="container-button">
+  <div>
+    <button
+      mat-raised-button
+      [color]="'primary'"
+      (click)="addNewItem()"
+      >Add new item
+    </button>
+  </div>
+  <div>
+    List length: {{ dataSource.data.length }}
+  </div>
+</div>

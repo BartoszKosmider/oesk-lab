@@ -1,0 +1,61 @@
+<div>
+  <div class="container">
+    <div class="column">
+      <h3>Template method</h3>
+      <mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="index">
+          <mat-header-cell *matHeaderCellDef> Index </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.index}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="value">
+          <mat-header-cell *matHeaderCellDef> Value </mat-header-cell>
+          <mat-cell *matCellDef="let element">
+             <span [style.color]="isValueEven(element.value) ? 'green' : 'red'">
+              {{ element.value}}
+             </span>
+          </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      </mat-table>
+    </div>
+    <div class="column">
+      <h3>Pure pipe</h3>
+      <mat-table [dataSource]="dataSource">
+        <ng-container matColumnDef="index">
+          <mat-header-cell *matHeaderCellDef> Index </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.index}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="value">
+          <mat-header-cell *matHeaderCellDef> Value </mat-header-cell>
+          <mat-cell *matCellDef="let element">
+            <span [style.color]="(element.value | appIsValueEven) ? 'green' : 'red'">
+             {{ element.value}}
+            </span>
+         </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      </mat-table>
+    </div>
+  </div>
+
+  <div class="container-button">
+    <div>
+      <button
+        mat-raised-button
+        [color]="'primary'"
+        (click)="addNewItem()"
+        >Add new item
+      </button>
+    </div>
+    <div>
+      List length: {{ dataSource.data.length }}
+    </div>
+  </div>
+</div>
+

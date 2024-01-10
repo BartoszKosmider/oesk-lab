@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  .column {
+    width: 50%;
+    padding: 20px;
+    overflow: auto;
+  }
+  height: 300px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.container-button {
+  text-align: center;
+  margin: 30px;
+  div {
+    padding: 10px;
+  }
+}
