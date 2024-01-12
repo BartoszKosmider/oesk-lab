@@ -5,6 +5,8 @@ import { MemoryLeakComponent } from './memory-leak/memory-leak.component';
 import { TableWithVirtualScrollComponent } from './virtual-scroll-example/table-with-virtual-scroll/table-with-virtual-scroll.component';
 import { TableWithoutVirtualScrollComponent } from './virtual-scroll-example/table-without-virtual-scroll/table-without-virtual-scroll.component';
 import { OnpushExampleComponent } from './onpush-example/onpush-example.component';
+import { RunOutsideAngularExampleComponent } from './runOutsideAngular-example/runOutsideAngular-example.component';
+import { DebounceTimeExampleComponent } from './debounce-time-example/debounce-time-example.component';
 
 const routes: Routes = [
   { path: 'pure-pipes', component: PurePipesComponent },
@@ -13,6 +15,8 @@ const routes: Routes = [
   { path: 'not-virtual-scroll', component: TableWithoutVirtualScrollComponent },
   { path: 'lazy-loading', loadChildren:()=> import('./lazy-loading/lazy-loading.module').then(m=> m.LazyLoadingModule) },
   { path: 'onpush', component: OnpushExampleComponent },
+  { path: 'run-outside-angular', component: RunOutsideAngularExampleComponent },
+  { path: 'debounce-time', component: DebounceTimeExampleComponent },
 ];
 
 @NgModule({

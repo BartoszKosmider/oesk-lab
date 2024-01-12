@@ -1,0 +1,10 @@
+<div>
+  <form [formGroup]="form">
+    <textarea formControlName="text"
+      spellcheck="false">
+    </textarea>
+  </form>
+</div>
+
+<h3>Without debounce time: {{ noDebouneTimeCounter}}</h3>
+<h3>With debounce time: {{ debounceTimeCounter}}</h3>

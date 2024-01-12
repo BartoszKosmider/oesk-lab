@@ -12,6 +12,9 @@ import { OnpushExampleComponent } from './onpush-example/onpush-example.componen
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultListComponent } from './onpush-example/default-list/default-list.component';
 import { OnpushListComponent } from './onpush-example/onpush-list/onpush-list.component';
+import { RunOutsideAngularExampleComponent } from './runOutsideAngular-example/runOutsideAngular-example.component';
+import { DebounceTimeExampleComponent } from './debounce-time-example/debounce-time-example.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import { OnpushListComponent } from './onpush-example/onpush-list/onpush-list.co
     OnpushExampleComponent,
     DefaultListComponent,
     OnpushListComponent,
+    RunOutsideAngularExampleComponent,
+    DebounceTimeExampleComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -32,6 +37,8 @@ import { OnpushListComponent } from './onpush-example/onpush-list/onpush-list.co
     CoreModule,
     IsValueEven,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
 })
 export class AppModule { }

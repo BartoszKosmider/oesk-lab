@@ -7,7 +7,7 @@
     </button>
     <span>OESK LAB</span>
   </mat-toolbar>
-  <mat-drawer-container>
+  <mat-drawer-container style="min-height: 500px;">
     <mat-drawer #drawer [mode]="'side'">
       <div class="command-container">
         <button
@@ -28,8 +28,23 @@
         <button
           mat-button
           routerLink="onpush"
-        >OnPush example
-      </button>
+          >OnPush example
+        </button>
+        <button
+          mat-button
+          routerLink="run-outside-angular"
+          >runOutsideAngular example
+        </button>
+        <button
+          mat-button
+          routerLink="memory-leak"
+          >Memory leak example
+        </button>
+        <button
+          mat-button
+          routerLink="debounce-time"
+          >Memory leak example
+        </button>
       </div>
     </mat-drawer>
     <mat-drawer-content>

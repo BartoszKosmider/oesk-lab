@@ -8,3 +8,13 @@ export interface IFibonacciListElement {
   index: number;
   value: number;
 }
+
+export interface ITest {
+  name: string;
+  age: number;
+}
+
+export class Test {
+  name?: string;
+  age?: number;
+}

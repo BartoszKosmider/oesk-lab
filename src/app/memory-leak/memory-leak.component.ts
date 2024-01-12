@@ -5,4 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: './memory-leak.component.html',
   styleUrl: './memory-leak.component.scss',
 })
-export class MemoryLeakComponent { }
+export class MemoryLeakComponent {
+  constructor() {
+    this.createMemoryLeak();
+  }
+
+  private createMemoryLeak(): void {
+
+  }
+}
