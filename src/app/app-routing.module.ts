@@ -7,6 +7,7 @@ import { TableWithoutVirtualScrollComponent } from './virtual-scroll-example/tab
 import { OnpushExampleComponent } from './onpush-example/onpush-example.component';
 import { RunOutsideAngularExampleComponent } from './runOutsideAngular-example/runOutsideAngular-example.component';
 import { DebounceTimeExampleComponent } from './debounce-time-example/debounce-time-example.component';
+import { DistinctUntilChangedExampleComponent } from './distinct-until-changed-example/distinct-until-changed-example.component';
 
 const routes: Routes = [
   { path: 'pure-pipes', component: PurePipesComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'onpush', component: OnpushExampleComponent },
   { path: 'run-outside-angular', component: RunOutsideAngularExampleComponent },
   { path: 'debounce-time', component: DebounceTimeExampleComponent },
+  { path: 'distinct-until-changed', component: DistinctUntilChangedExampleComponent },
 ];
 
 @NgModule({

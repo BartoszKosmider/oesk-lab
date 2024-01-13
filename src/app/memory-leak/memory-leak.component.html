@@ -1,1 +1,9 @@
-<p>memory-leak works!</p>
+<div style="max-height: 500px;">
+  <h3>Memory leak count: {{ memoryLeakValues.length }}</h3>
+  <h3>Memory leak values</h3>
+  @for (memoryLeakValue of memoryLeakValues; track $index) {
+    <div>
+      <span>Value: {{ memoryLeakValue }}</span>
+    </div>
+  }
+</div>

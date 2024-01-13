@@ -1,0 +1,10 @@
+<div>
+  <h3>
+    Values in stream:
+  </h3>
+  @for (item of values; track $index) {
+    {{item}},
+  }
+  <h3>Without distinctUntilChanged: {{ withoutDistinctUntilChangedCount }}</h3>
+  <h3>With distinctUntilChanged: {{ withDistinctUntilChangedCount }}</h3>
+</div>
