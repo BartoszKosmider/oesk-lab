@@ -9,6 +9,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 ## Build
 
 Run `npm run build` to build the project without AOT. The build artifacts will be stored in the `dist/` directory.
+
 Run `npm run build-aot` to build the project with AOT. The build artifacts will be stored in the `dist/` directory.
 
 ## Source tree map
